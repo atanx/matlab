@@ -1,18 +1,35 @@
 <html>
 
-    <head>
-        <link rel="stylesheet" href="css/app.css" />
-        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
-        <script type="text/javascript" src="js/marked.js"></script>
-    </head>
+<head>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/marked.js"></script>
+    <script type="text/javascript" src="js/ditto.js"></script>
+    <script type="text/javascript" src="js/prism.js"></script>
+    <script type="text/javascript" src="js/store.js.js"></script>
+</head>
 
-    <body>
-    <div id="content"> test </div>
-    <script type="text/javascript">
-        $.get('/articles/markdown.md', function (r) {
-            $('#content').html(marked(r));
-        });
+<body>
+    <!-- essential -->
+    <div id="sidebar"></div>
+    <div id="content"></div>
+    <!-- optional -->
+    <div id="back_to_top">back to top</div>
+    <div id="edit">edit</div>
+    <div id="loading">Loading ...</div>
+    <div id="error">Opps! ... File not found!</div>
+    <div id="flip">
+        <div id="pageup">上一章</div>
+        <div id="pagedown">下一章</div>
+    </div>
+    <div class="progress-indicator-2"></div>
+
+    <script src="js/config.js"></script>
+    <script>
+        ditto.run();
     </script>
-    </body>
+</body>
 
 </html>
