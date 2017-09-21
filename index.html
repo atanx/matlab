@@ -1,20 +1,18 @@
 <html>
 
-<head>
-<script src="js/jquery-2.2.1.min.js"></script>
-<script src="js/marked.js"></script>
+    <head>
+        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/marked.js"></script>
+    </head>
 
-</head>
-<body>
-<h1>hello world</h1>
-<div id="content">
-
-</div>
-<script type="text/javascript">
-    $.get('/articles/markdown.md',function(r){
-        $('#content').html(marked(r));
-    });
-</script>
-</body>
+    <body>
+    <h1>hello world</h1>
+    <div id="content"></div>
+    <script type="text/javascript">
+        $.get('/articles/markdown.md', function (r) {
+            $('#content').html(marked(r));
+        });
+    </script>
+    </body>
 
 </html>
