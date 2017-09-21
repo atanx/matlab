@@ -1,1 +1,19 @@
+<html>
+
+<head>
+<script src="js/jquery-2.2.1.min.js"></script>
+
+</head>
+<body>
 <h1>hello world</h1>
+<div id="content">
+
+</div>
+<script type="text/javascript">
+    $.get('/articles/markdown.md',function(r){
+        $('#content').html(marked(md));
+    });
+</script>
+</body>
+
+</html>
