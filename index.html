@@ -6,8 +6,7 @@
     </head>
 
     <body>
-    <h1>hello world</h1>
-    <div id="content"></div>
+    <div id="content"> test </div>
     <script type="text/javascript">
         $.get('/articles/markdown.md', function (r) {
             $('#content').html(marked(r));
