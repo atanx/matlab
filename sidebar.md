@@ -7,7 +7,7 @@
 ## 目录
 1. [前言](#README)
 1. [语法](#articles/markdown)
-1. [技术带来什么](#articles/what-can-technology-bring-to-you)
+1. [技术带来什么](#articles/what-can-technology-bring-to-us)
 
 ## 其他
 - [源码](http://github.com/ruanyf/es6tutorial/)
