@@ -12,7 +12,7 @@ var ditto = {
     edit_button: true,
     back_to_top_button: true,
     save_progress: true, // 保存阅读进度
-    search_bar: true,
+    search_bar: false,
 
     // initialize function
     run: initialize
@@ -115,6 +115,7 @@ function searchbar_listener(event) {
     // event.preventDefault();
     var q = $('input[name=search]').val();
     if (q !== '') {
+
       var url = 'https://github.com/ruanyf/es6tutorial/search?utf8=✓&q=' + encodeURIComponent(q);
       window.open(url, '_blank');
       win.focus();
