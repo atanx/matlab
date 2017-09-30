@@ -3,7 +3,7 @@ var CONFIG = {
   document_title: "江斌的官方博客",
 
   // index page
-  index: "markdown.md",
+  index: "index.md",
 
   // sidebar file
   sidebar_file: "sidebar.md",
